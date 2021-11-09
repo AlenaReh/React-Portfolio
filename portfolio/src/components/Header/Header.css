@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    height: 100px;
+    color: #f0d6d2 !important;
+    background-color: #152835;
+    font-size: 20px;
+}
+
+.header-name{
+    font-weight: bolder;
+    margin: 3rem;
+}
+
+.navbar-light .navbar-nav .nav-link  {
+    color: #f0d6d2;
+}
+
