@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
-import Project from './components/Project';
-import Footer from './components/Footer';
+// import Project from './components/Project/Project';
+import Footer from './components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -14,8 +14,8 @@ const App = () => {
       <Intro/>
       {/* <Project />
       <Project />
-      <Project />
-      <Footer /> */}
+      <Project /> */}
+      <Footer />
     </div>
   );
 }
