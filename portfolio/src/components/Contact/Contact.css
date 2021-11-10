@@ -1,0 +1,25 @@
+
+.contact-container{ 
+    background-color: #152835 !important;
+    padding: 20px;
+    color: #F0D6D2;
+    display: inline-block;
+    width: auto;
+}
+
+.contact-submit{
+    color: #152835 !important;
+    background-color: #DBA093 !important;
+    border-color: #F0D6D2 !important;
+    margin-top: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+.contact-form{
+    background-color: #152835 !important;
+}
+
+.form-control{
+    background-color: #F0D6D2 !important;
+}

@@ -1,0 +1,35 @@
+.resume-div {
+    background-color: #070E13;
+    color: #F0D6D2;
+    height: auto;
+    font-size: 20px;
+    padding: 30px;
+    width: auto;
+}
+
+.resume-btn {
+    color: #152835 !important;
+    background-color: #DBA093 !important;
+    border-color: #F0D6D2 !important;
+    margin-top: 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    position: relative;
+}
+
+.resume-name {
+    color: #DBA093;
+    font-weight: bolder;
+}
+
+.resume-skills {
+    padding: 10px;
+
+}
+
+.alternate{
+    color: #DBA093;
+}
+
