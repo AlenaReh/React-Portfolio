@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import './Header.css';
 
 
-function Header() {
+function Header({ currentPage, handlePageChange }) {
   
     return (
       <Navbar className="header" fixed="top" variant="light">
@@ -14,12 +14,12 @@ function Header() {
           <span></span>
           <span></span>
           <span></span>
-          <Navbar.Brand className='header-font-col' href="#home">About Me</Navbar.Brand>
+          <Navbar.Brand className='header-font-col' href="#Intro" onClick={() => handlePageChange('Intro')}>About Me</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link className='header-font-col' href="#home">Home</Nav.Link>
-            <Nav.Link className='header-font-col' href="#portfolio">Portfolio</Nav.Link>
-            <Nav.Link className='header-font-col' href="#contacts">Contacts</Nav.Link>
-            <Nav.Link className='header-font-col' href="#resume">Resume</Nav.Link>
+
+            <Nav.Link className='header-font-col' href="#Portfolio" onClick={() => handlePageChange('Portfolio')}>Portfolio</Nav.Link>
+            <Nav.Link className='header-font-col' href="#Contact" onClick={() => handlePageChange('Contact')}>Contact</Nav.Link>
+            <Nav.Link className='header-font-col' href="#Resume" onClick={() => handlePageChange('Resume')}>Resume</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
