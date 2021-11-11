@@ -1,0 +1,59 @@
+.portfolio {
+    background-color: #f0d6d2;
+    margin-top: 100px;
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.p-text {
+    font-size: 30px;
+}
+
+.port-title {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.port-desc{
+    margin: 20px 0px;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.p {
+    overflow: hidden;
+    width: 40%;
+    height: 60vh;
+    margin: 20px 20px;
+    border: 2px;
+    border-style: solid;
+    border-color: #152835 important!;
+    border-radius: 10px;
+    color: #152835
+}
+
+.p-header {
+    height: 20px;
+    background-color: #152835;
+    display: flex;
+    align-items: center;
+    color:#f0d6d2;
+}
+
+.demo-img {
+    width: 100%;
+
+}
+
+.demo-img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

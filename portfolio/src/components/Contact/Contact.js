@@ -22,6 +22,7 @@ function Contact() {
     return;
     };
 
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     console.log("Button clicked");
