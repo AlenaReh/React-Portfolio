@@ -21,10 +21,18 @@
   box-shadow: 0 0 4px 4px;
 }
 
+
+
 @media screen and (max-width: 480px) {
   .header {
     font-size: 16px;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    font-size: 12px;
   }
 }

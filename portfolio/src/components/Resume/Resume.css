@@ -45,3 +45,18 @@
 .alternate {
   color: #dba093;
 }
+
+@media screen and (max-width: 375px) {
+  .resume-wrapper {
+    padding: 0;
+  }
+  .resume-name {
+    font-size: 16px;
+  }
+  .resume-skills {
+    font-size: 16px;
+  }
+  li {
+    font-size: 14px;
+  }
+}

@@ -65,7 +65,16 @@
 img, svg {
     color: #f0d6d2;
 }
+@media screen and (max-width: 768px) {
+    .portfolio{
+        padding: 0;
+    }
+    .p{
+        height: 45vh;
+        width: 40%;
+    }
 
+}
 @media screen and (max-width: 480px){
     .portfolio{
         padding: 5px;
@@ -78,4 +87,17 @@ img, svg {
         display: none;
     }
 
+}
+
+@media screen and (max-width: 375px) {
+    .portfolio {
+        padding: 0;
+    }
+    .p{
+        height: 40vh;
+        width: 1000%;
+    }
+    p{
+        display: none;
+    }
 }
