@@ -1,10 +1,7 @@
 import React from "react";
-import './Footer.css';
+import "./Footer.css";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiFillLinkedin
-} from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 
 function Footer() {
@@ -14,19 +11,18 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Alena Rehberger</h3>
+          <div>Alena Rehberger</div>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year}</h3>
+          <div>Copyright © {year}</div>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
-
             <li className="social-icons">
               <a
                 href="https://github.com/AlenaReh"
                 style={{ color: "#f0d6d2" }}
-                target="_blank" 
+                target="_blank"
               >
                 <AiFillGithub />
               </a>
@@ -36,7 +32,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/alena-rehberger/"
                 style={{ color: "#f0d6d2" }}
-                target="_blank" 
+                target="_blank"
               >
                 <AiFillLinkedin />
               </a>
@@ -51,7 +47,6 @@ function Footer() {
                 <SiGmail />
               </a>
             </li>
-
           </ul>
         </Col>
       </Row>

@@ -8,15 +8,14 @@ import {
   BsFillPersonFill,
 } from "react-icons/bs";
 // Here we import a helper function that will check if the email is valid
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail } from "../../utils/helpers";
 
 function Contact() {
   let [userName, setUserName] = useState("");
   let [email, setEmail] = useState("");
   let [text, setText] = useState("");
 
-  const [errorMessage, setErrorMessage] = useState('');
-
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -30,7 +29,6 @@ function Contact() {
       setText(value);
     }
     return;
-
   };
 
   const handleFormSubmit = (e) => {
@@ -39,19 +37,20 @@ function Contact() {
 
     // Checking to see if inputs are empty. If so we set an error message to be displayed on the page.
     if (!userName) {
-      setErrorMessage('Name is a required field!');
+      setErrorMessage("Name is a required field!");
     } else if (!email) {
-      setErrorMessage('Email is a required field!');
+      setErrorMessage("Email is a required field!");
     } else if (!text) {
-      setErrorMessage('Message is a required field!');
-    } else {setErrorMessage("");
-  }
+      setErrorMessage("Message is a required field!");
+    } else {
+      setErrorMessage("");
+    }
 
     const isValid = validateEmail(email);
 
     if (!isValid) {
       setErrorMessage("Please, eneter a valid email!");
-    } 
+    }
 
     setUserName("");
     setEmail("");
@@ -111,12 +110,11 @@ function Contact() {
           />{" "}
         </Form>
         {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
       </Container>
-
     </div>
   );
 }
