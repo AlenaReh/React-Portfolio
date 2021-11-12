@@ -12,8 +12,9 @@ function Resume() {
     //   }, []);
 
     return (
+    <div className="resume-wrapper">
         <Container fluid className='resume-container'>
-            <Row style={{ justifyContent: 'center', position: 'relative' }}>
+            <Row>
             <Button className='resume-btn' href={resume} target='_blank'>
                 Download My Resume
                 <AiOutlineCloudDownload />
@@ -69,6 +70,8 @@ function Resume() {
 
             </div>
         </Container>
+
+    </div>
     );
 }
 
