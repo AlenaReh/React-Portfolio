@@ -4,14 +4,35 @@
     color: #f0d6d2 !important;
     background-color: #152835;
     font-size: 20px;
+    
 }
 
 .header-name{
     font-weight: bolder;
-    margin: 3rem;
+    margin: 2rem;
 }
 
-.navbar-light .navbar-nav .nav-link  {
-    color: #f0d6d2;
+.nav-link {
+    color: #f0d6d2 !important;
 }
+
+.navbar-brand {
+    color: #f0d6d2 !important;
+
+}
+
+.nav-link :hover {
+    color: #DBA093;
+    transform: scale(1.05);
+    box-shadow: 0 0 4px 4px;
+
+}
+.navbar-brand :hover  {
+    color: #DBA093;
+    transform: scale(1.05);
+    box-shadow: 0 0 4px 4px;
+}
+
+
+
 
