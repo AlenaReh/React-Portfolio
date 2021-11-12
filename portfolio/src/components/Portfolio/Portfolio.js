@@ -7,6 +7,7 @@ import demo4 from'../../Assets/images/demo4.png';
 import demo5 from'../../Assets/images/demo5.png';
 import demo6 from'../../Assets/images/demo6.png';
 import {AiFillGithub} from "react-icons/ai";
+import {BsLaptop} from "react-icons/bs";
 
 
 
@@ -15,7 +16,7 @@ const Portfolio = () => {
       <div className="portfolio">
         <div className="p-text">
           <h1 className="port-title">Portfolio</h1>
-          <p className="port-desc">Descriptive text</p>
+          <p className="port-desc">Here are some of my PROJECTS < BsLaptop /></p>
         </div>
         <div className="project">
           <div className="p">

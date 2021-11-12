@@ -17,7 +17,7 @@ function Resume() {
             <Row>
             <Button className='resume-btn' href={resume} target='_blank'>
                 Download My Resume
-                <AiOutlineCloudDownload />
+                < AiOutlineCloudDownload />
             </Button>
             </Row>
             <div className='resume-div'>

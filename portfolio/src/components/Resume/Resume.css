@@ -1,12 +1,13 @@
 .resume-wrapper{
     display: flex;
-    background-color: #2C5570 !important;
+    background-color: #0C1820 !important;
     height: auto;
     padding: 30px;
+    margin-top: 100px;
 }
 
 .resume-div {
-    background-color: #2C5570;
+    background-color: #0C1820;
     color: #F0D6D2;
     height: auto;
     font-size: 20px;
@@ -24,6 +25,12 @@
     align-items: center;
     width: 100%;
     position: relative;
+}
+
+.resume-btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 4px 6px;
 }
 
 .resume-name {
