@@ -25,6 +25,7 @@ const App = () => {
     return <Resume />;
   };
 
+  
   const handlePageChange = (page) => setCurrentPage(page);
   return (
 
@@ -35,14 +36,6 @@ const App = () => {
     {renderPage()}
     <Footer />
   </div>
-    // <div>
-    //   <Header />
-    //   <Intro />
-    //   <Portfolio />
-    //   <Contact/>
-    //   <Resume/>
-    //   <Footer />
-    // </div>
   );
 };
 

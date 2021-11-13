@@ -11,6 +11,7 @@ import {
 } from "react-icons/bs";
 
 function Header({ currentPage, handlePageChange }) {
+  
   return (
     <Navbar className="header" fixed="top" variant="light">
       <Container className="header-container">
@@ -18,6 +19,8 @@ function Header({ currentPage, handlePageChange }) {
         <span></span>
         <span></span>
         <span></span>
+
+        <Nav className="me-auto">
         <Nav.Link
           className="header-font-col"
           href="#Intro"
@@ -25,7 +28,6 @@ function Header({ currentPage, handlePageChange }) {
         >
           About Me <BsFillPersonFill />
         </Nav.Link>
-        <Nav className="me-auto">
           <Nav.Link
             className="header-font-col"
             href="#Portfolio"

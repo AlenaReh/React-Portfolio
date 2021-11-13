@@ -17,14 +17,14 @@ const Intro = () => {
               <div className="intro-title-item">Dreamer</div>
             </div>
           </div>
-          <p className="intro-text">
+          <h5 className="intro-text">
             I enjoy traveling, yoga, photography, reading, and learning. I
             recently became fascinated by the web development. This industry is
             constantly evolving and I love that a person can enhance their
             creativity, challenge their critical thinking skills, and travel
             around the world while doing something that inspires and makes a
             difference in this world.
-          </p>
+          </h5>
         </div>
       </div>
       <div className="intro-right">

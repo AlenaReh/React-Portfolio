@@ -23,6 +23,11 @@
   margin-bottom: 0.5em !important;
   padding: 0 !important;
 }
+@media screen and (max-width: 768px) {
+  .footer-copywright {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .footer {
