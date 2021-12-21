@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import { Container, Form } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import "./Contact.css";
@@ -14,7 +15,6 @@ function Contact() {
   let [userName, setUserName] = useState("");
   let [email, setEmail] = useState("");
   let [text, setText] = useState("");
-
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
@@ -33,8 +33,7 @@ function Contact() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    console.log("Button clicked");
-
+    // console.log("Button clicked");
     // Checking to see if inputs are empty. If so we set an error message to be displayed on the page.
     if (!userName) {
       setErrorMessage("Name is a required field!");
@@ -52,16 +51,36 @@ function Contact() {
       setErrorMessage("Please, eneter a valid email!");
     }
 
+    const userInput = {
+      userName: `${userName}`,
+      email: `${email}`,
+      text: `${text}`,
+    };
+    fetch("https://formspree.io/f/mgergkez", {
+      mode: "no-cors",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userInput),
+    })
+      .then((data) => console.log(data))
+      .catch((err) => console.error("Error:", err));
+
     setUserName("");
     setEmail("");
     setText("");
   };
 
+  const [showResults, setShowResults] = React.useState(false);
+  const onSubmit = () => setShowResults(true);
+  const Results = () => <div>Thank you!</div>;
+
   return (
     <div className="contact-wrapper">
       <Container className="contact-container">
         <h1 className="contact-text">Would you like to connect?</h1>
-        <Form className="contact-form">
+        <Form className="contact-form" onSubmit={onSubmit}>
           <Form.Group controlId="form.Name">
             <Form.Label className="contact-title">
               Name <BsFillPersonFill />
@@ -107,8 +126,10 @@ function Contact() {
             type="submit"
             value="Submit"
             onClick={handleFormSubmit}
-          />{" "}
+          />
+          <h4>{showResults ? <Results /> : null}</h4>
         </Form>
+
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
