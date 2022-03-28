@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { Container, Row, Button } from "react-bootstrap";
-import resume from "../../Assets/docs/RESUME.pdf";
+import resume from "../../Assets/docs/PORT_RESUME.pdf";
+import cert from "../../Assets/docs/CERT.pdf";
+
 import "./Resume.css";
 
 function Resume() {
@@ -18,6 +20,14 @@ function Resume() {
             <AiOutlineCloudDownload />
           </Button>
         </Row>
+
+        <Row>
+          <Button className="resume-btn" href={cert} target="_blank">
+            Download My Full Stack Web Development Certificate
+            <AiOutlineCloudDownload />
+          </Button>
+        </Row>
+
         <div className="resume-div">
           <h2 className="resume-name">ALENA REHBERGER</h2>
           <p className="resume-items">
