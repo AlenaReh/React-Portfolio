@@ -21,11 +21,13 @@ function Resume() {
         <div className="resume-div">
           <h2 className="resume-name">ALENA REHBERGER</h2>
           <p className="resume-items">
-            Full stack web developer with interests in psychology and
-            photography. Always excited to provide unique perspectives on how
-            end-users interact with websites and software platforms. Earned a
-            certificate in MERN Stack Web Development from the University of
-            Minnesota Coding Boot Camp.
+            Passionate full stack web developer who can grab client’s attention with clean, simple, and stunning web content. Earned a certificate in MERN Stack Web Development from the University of Minnesota Coding Boot Camp. I love working with HTML, CSS, JavaScript, Node.js, React.js, and other modern technologies. Strengths in creativity, teamwork, and building projects from ideation to execution.
+          <br/>
+          <br/>
+            Looking to bring my attention to detail, technical skills, interests in photography, psychology, and education to a company to grow and become a valuable asset.
+          <br/>
+          <br/>
+            <div className="alternate">Currently learning C#.</div>
           </p>
           <h3 className="resume-skills">TECHNICAL SKILLS</h3>
           <li className="alternate">JavaScript ES6+</li>
@@ -48,15 +50,22 @@ function Resume() {
           <li>MySQL</li>
           <li className="alternate">MongoDB</li>
           <li>React</li>
-          <li className="alternate">Insomnia</li>
-          <li>MySQLWorkbench</li>
-          <li className="alternate">Robo 3T</li>
-          <li>Heroku</li>
+          <li className="alternate">React Native</li>
+          <li>JWT</li>
+          <li className="alternate">GraphQL</li>
+          <li>C#</li>
           <li className="alternate">Socket.IO</li>
+          <li>Heroku</li>
+          <li className="alternate">Redux</li>
+          <li>Twilio</li>
+          <li className="alternate">Robo 3T</li>
+          <li>MySQLWorkbench</li>
+          <li className="alternate">Insomnia</li>
           <li>GitHub</li>
           <li className="alternate">Slack</li>
           <li>Zoom</li>
-
+          <br/>
+          <br/>
           <h3 className="resume-skills">SOFT SKILLS</h3>
           <li className="alternate">Patience</li>
           <li>Open-mindness</li>
@@ -65,6 +74,8 @@ function Resume() {
           <li className="alternate">Emotional Intelligence</li>
           <li>Creativity</li>
           <li className="alternate">Problem Solving</li>
+          <li>Accountability</li>
+
         </div>
       </Container>
     </div>
