@@ -64,6 +64,7 @@
 
 img, svg {
     color: #f0d6d2;
+    font-size: 30px;
 }
 @media screen and (max-width: 768px) {
     .portfolio{
@@ -75,6 +76,11 @@ img, svg {
     }
 
 }
+@media screen and (max-width: 540px){
+    p{
+        display: none;
+    }
+}
 @media screen and (max-width: 480px){
     .portfolio{
         padding: 5px;
@@ -83,8 +89,15 @@ img, svg {
         height: 30vh;
         width: 40%;
     }
+    div.p-header{
+        font-size: 14px;
+    }
     p{
         display: none;
+    }
+    svg{
+        font-size: 24px;
+
     }
 
 }
@@ -99,5 +112,9 @@ img, svg {
     }
     p{
         display: none;
+    }
+    svg{
+        font-size: 20px;
+
     }
 }
