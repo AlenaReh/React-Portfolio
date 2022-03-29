@@ -31,6 +31,10 @@
   box-shadow: 0 3px 3px 3px;
 }
 
+path {
+
+}
+
 @media screen and (max-width: 768px) {
   .nav-link {
     margin: 0;

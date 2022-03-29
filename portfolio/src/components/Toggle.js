@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './Toggle.css';
 import { setTheme } from '../utils/themes';
+import {
+  BsFillBrightnessHighFill,
+  BsFillMoonFill
+} from "react-icons/bs";
 
 function Toggle() {
-    // false = dark mode because of the way I wrote the CSS
     const [active, setActive] = useState(false)
-    // the opposite
     const [ariaActive, setAriaActive] = useState(true)
     let theme = localStorage.getItem('theme')
 
@@ -39,16 +41,28 @@ function Toggle() {
         setActive(true)
         setAriaActive(false)
       }
-    }, [theme])
+    }, [theme]);
+
+  let icon = localStorage.getItem('theme') === 'theme-light' ? <BsFillMoonFill size={50} /> : <BsFillBrightnessHighFill size={50} />;
+  console.log(icon)
 
     return (
-      <div className="container--toggle">
+      // <div className="container--toggle">
+      //   <input aria-label="dark mode toggle" role="switch" aria-checked={ariaActive} onKeyPress={handleKeypress} type="checkbox" id="toggle" className="toggle--checkbox" onClick={handleOnClick} checked={active} readOnly />
+      //   <label htmlFor="toggle" className="toggle--label">
+      //     <span className="toggle--label-background"></span>
+      //     Switch
+      //   </label>
+      // </div>
+
+      <div>
         <input aria-label="dark mode toggle" role="switch" aria-checked={ariaActive} onKeyPress={handleKeypress} type="checkbox" id="toggle" className="toggle--checkbox" onClick={handleOnClick} checked={active} readOnly />
-        <label htmlFor="toggle" className="toggle--label">
-          <span className="toggle--label-background"></span>
-          Switch
+
+        <label htmlFor="toggle" className="toggle-icon">
+          {icon}
         </label>
       </div>
+
     )
 }
 

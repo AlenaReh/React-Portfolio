@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { Container, Row, Button } from "react-bootstrap";
 import resume from "../../Assets/docs/PORT_RESUME.pdf";
@@ -7,10 +7,6 @@ import cert from "../../Assets/docs/CERT.pdf";
 import "./Resume.css";
 
 function Resume() {
-  // useEffect(() => {
-  //     setWidth(window.innerWidth);
-  //   }, []);
-
   return (
     <div className="resume-wrapper">
       <Container fluid className="resume-container">

@@ -6,7 +6,7 @@
 .contact-container {
   background-color: var( --background);
   padding: 20px;
-  color: var ( --light-text);
+  color: var( --light-text);
   width: 100%;
   margin-top: 100px;
   position: absolute;
@@ -32,8 +32,13 @@
 }
 
 .form-control {
-  background-color: var (--dark-text);
+  background-color: var( --dark-text);
 }
+
+/* input, textarea{
+  background-color: var(--light-text) !important;
+} */
+
 
 @media screen and (max-width: 768px) {
   .contact-container {
