@@ -10,7 +10,7 @@
   background-color: var( --background);
   color: var( --light-text);
   height: auto;
-  font-size: 20px;
+  font-size: 20px !important;
   padding: 50px;
   width: 100%;
 }
@@ -36,21 +36,34 @@
 .resume-name {
   color: #dba093;
   font-weight: bolder;
+  justify-content: center;
+  text-align: center;
 }
 
 .resume-skills {
   padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.columns{
+  column-count: 2;
+  column-gap: 50px;
 }
 
 .alternate {
   color: #dba093;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .resume-wrapper {
     padding: 0;
   }
+  .resume-div{
+    padding: 0;
+  }
   .resume-name {
+    padding-top: 20px;
     font-size: 16px;
   }
   .resume-skills {
@@ -60,3 +73,30 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .resume-name {
+    font-size: 16px;
+    padding: 20px;
+  }
+  .resume-skills {
+    font-size: 14px;
+
+  }
+  li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .resume-name {
+    font-size: 14px;
+  }
+  .resume-skills {
+    font-size: 14px;
+  }
+  li {
+    font-size: 12px;
+  }
+}
+

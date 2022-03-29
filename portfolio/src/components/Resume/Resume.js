@@ -36,7 +36,11 @@ function Resume() {
           <br/>
             <div className="alternate">Currently learning C#.</div>
           </p>
+          <br/>
+
           <h3 className="resume-skills">TECHNICAL SKILLS</h3>
+          <br/>
+          <div className="columns">
           <li className="alternate">JavaScript ES6+</li>
           <li>CSS</li>
           <li className="alternate">HTML</li>
@@ -71,9 +75,12 @@ function Resume() {
           <li>GitHub</li>
           <li className="alternate">Slack</li>
           <li>Zoom</li>
+          </div>
           <br/>
           <br/>
           <h3 className="resume-skills">SOFT SKILLS</h3>
+          <br/>
+          <div className="columns">
           <li className="alternate">Patience</li>
           <li>Open-mindness</li>
           <li className="alternate">Adaptability</li>
@@ -82,6 +89,7 @@ function Resume() {
           <li>Creativity</li>
           <li className="alternate">Problem Solving</li>
           <li>Accountability</li>
+          </div>
 
         </div>
       </Container>

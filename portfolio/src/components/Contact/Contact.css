@@ -1,10 +1,10 @@
 .contact-wrapper {
-  background-color: var( --background);
+  background-color: var( --light-background);
   height: 100vh;
   padding: 30px;
 }
 .contact-container {
-  background-color: var( --background);
+  background-color: var( --light-background);
   padding: 20px;
   color: var( --light-text);
   width: 100%;
@@ -28,17 +28,16 @@
 }
 
 .contact-form {
-  background-color: var( --background);
+  background-color: var( --light-background);
 }
 
 .form-control {
   background-color: var( --dark-text);
 }
 
-/* input, textarea{
-  background-color: var(--light-text) !important;
-} */
-
+input, textarea{
+  background-color: var( --form) !important;
+}
 
 @media screen and (max-width: 768px) {
   .contact-container {

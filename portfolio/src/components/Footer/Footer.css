@@ -1,6 +1,6 @@
 .footer {
-  background-color: #11212c;
-  color: #f0d6d2 !important;
+  background-color: var( --navbar);
+  color: var( --light-text) !important;
   padding-top: 10px !important;
   height: 10vh !important;
 }

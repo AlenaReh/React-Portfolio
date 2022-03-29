@@ -1,7 +1,7 @@
 .header {
   display: flex;
   height: 100px;
-  background-color: var( --background);
+  background-color: var( --navbar);
   font-size: 20px;
 }
 
@@ -31,11 +31,21 @@
   box-shadow: 0 3px 3px 3px;
 }
 
-path {
-
-}
-
 @media screen and (max-width: 768px) {
+  .nav-link {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  .header {
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-name {
+    display: none;
+  }
   .nav-link {
     margin: 0;
     padding: 0;
@@ -59,6 +69,15 @@ path {
 @media screen and (max-width: 375px) {
   .header {
     font-size: 14px;
+  }
+  .header-name {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .header {
+    font-size: 9px;
   }
   .header-name {
     display: none;
