@@ -1,0 +1,24 @@
+  /* --dark-theme */
+  .theme-light {
+    --dark-text: #5E4B56;
+    --intro-background: #f0d6d2;
+    --project-border: #DBA093;
+    --background: #f0d6d2;
+    --light-text: #5E4B56;
+    --light-background: #586F7C;
+  }
+  
+  /* --light-theme */
+  .theme-dark {
+    --dark-text: #f0d6d2;
+    --intro-background: black;
+    --light-background: #586F7C;
+    --background: #0C1820;
+    --light-text: #f0d6d2;
+  }
+  
+  html, #root {
+    color: var( --light-text);
+    height: 100%;
+  }
+  

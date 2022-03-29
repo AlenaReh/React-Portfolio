@@ -1,10 +1,11 @@
 .intro {
-  display: flex;
-  background-color: black;
+  /* background-color: black; */
   /* background-color: #070E13; */
-  color: #f0d6d2;
+  padding: 10px;
+  display: flex;
+  color: var( --light-text);
   height: 100vh;
-  /* padding: 10px; */
+  background-color: var(--intro-background);
 }
 .intro-left {
   flex: 1;
@@ -37,9 +38,9 @@
   overflow: hidden;
 }
 
-.intro-text {
-  /* font-size: 20px !important; */
-}
+/* .intro-text {
+  font-size: 20px !important;
+} */
 
 .intro-title-wrapper {
   height: 100%;

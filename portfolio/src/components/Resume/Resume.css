@@ -1,14 +1,14 @@
 .resume-wrapper {
   display: flex;
-  background-color: #0c1820 !important;
+  background-color: var( --background);
   height: auto;
   padding: 30px;
   margin-top: 100px;
 }
 
 .resume-div {
-  background-color: #0c1820;
-  color: #f0d6d2;
+  background-color: var( --background);
+  color: var( --light-text);
   height: auto;
   font-size: 20px;
   padding: 50px;

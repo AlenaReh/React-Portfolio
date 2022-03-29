@@ -1,12 +1,12 @@
 .portfolio {
-    background-color: #0C1820;
+    background-color: var( --background);
     margin-top: 100px;
     padding: 60px 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #DBA093;
+    color: var( --light-text);
 }
 
 .p-text {
@@ -16,6 +16,7 @@
 .port-title {
     font-size: 50px;
     font-weight: 500;
+    color: #dba093;
 }
 
 .port-desc{
@@ -37,9 +38,8 @@
     padding: 10px;
     border: 2px;
     border-style: solid;
-    /* border-color: #152835 important!; */
     border-radius: 10px;
-    color: #f0d6d2;;
+    color: var( --light-text);
     background-color: transparent 
 }
 
@@ -47,9 +47,9 @@
     height: 40px;
     font-size: x-large;
     justify-content: center;
-    background-color: #0C1820;
+    background-color: var( --portfolio-background);
     display: flex;
-    color: #f0d6d2;
+    color: var( --light-text);
 }
 
 .demo-img {
@@ -63,7 +63,7 @@
 }
 
 img, svg {
-    color: #f0d6d2;
+    color: var( --light-text);
     font-size: 30px;
 }
 @media screen and (max-width: 768px) {

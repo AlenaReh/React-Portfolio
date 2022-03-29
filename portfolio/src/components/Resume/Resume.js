@@ -20,7 +20,7 @@ function Resume() {
             <AiOutlineCloudDownload />
           </Button>
         </Row>
-
+        <br/>
         <Row>
           <Button className="resume-btn" href={cert} target="_blank">
             Download My Full Stack Web Development Certificate
@@ -30,6 +30,7 @@ function Resume() {
 
         <div className="resume-div">
           <h2 className="resume-name">ALENA REHBERGER</h2>
+          <br/>
           <p className="resume-items">
             Passionate full stack web developer who can grab client’s attention with clean, simple, and stunning web content. Earned a certificate in MERN Stack Web Development from the University of Minnesota Coding Boot Camp. I love working with HTML, CSS, JavaScript, Node.js, React.js, and other modern technologies. Strengths in creativity, teamwork, and building projects from ideation to execution.
           <br/>
