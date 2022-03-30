@@ -31,7 +31,8 @@ A simple REACT portfolio with some of my latest projects.
   *Alena Rehberger*
 
 ## Credits
-  Thanks to Trilogy Education Services for inspiring me to create this portfolio.
+  Thanks to Trilogy Education Services for inspiring me to create this portfolio and FreeCodeCamp.org for an awesome advanced animation tutorial. Also wanted to highlight Abbey Perini that wrote an article about How to Toggle Dark Mode in React. It helped me a lot with implementation of switching theme functionality. 
+
 
 ## Contact
   If you have any questions, feel free to cantact me at: 
