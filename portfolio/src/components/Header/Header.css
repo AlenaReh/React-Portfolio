@@ -19,15 +19,14 @@
 }
 
 .navbar-nav :hover{
-  color: #dba093;
   transform: scale(1.05);
   box-shadow: 0 3px 3px 3px;
   border-radius: 0.2rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-nav :active {
   color: #dba093;
-  transform: scale(1.05);
   box-shadow: 0 3px 3px 3px;
 }
 

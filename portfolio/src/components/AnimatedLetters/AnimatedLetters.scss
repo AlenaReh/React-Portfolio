@@ -1,0 +1,31 @@
+@import 'animate.css';
+
+.text-animate{
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 3s infinite 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    min-width: 20px;
+    font-size: 50px !important;
+    color: #dba093;
+}
+.text-animate-hover {
+    font-size: 50px !important;
+    min-width: 20px;
+    color: #dba093;
+    display: inline-block;
+    animation-fill-mode: both;
+    &:hover {
+        animation: rubberBand 1s;
+        color: #a3503d;
+    }
+}
+
+// Adding the delay
+@for $i from 1 through 35 {
+    .text-animate._#{$i} {
+      animation-delay: #{$i / 20}s;
+    }
+  }

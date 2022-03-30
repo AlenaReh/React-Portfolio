@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import "./Portfolio.css";
 import demo1 from "../../Assets/images/demo1.png";
 import demo2 from "../../Assets/images/demo2.png";
@@ -8,16 +8,27 @@ import demo5 from "../../Assets/images/demo5.png";
 import demo6 from "../../Assets/images/demo6.png";
 import demo7 from "../../Assets/images/demo7.png";
 import demo8 from "../../Assets/images/demo8.png";
-
-
 import { AiFillGithub } from "react-icons/ai";
 import { BsLaptop } from "react-icons/bs";
+import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
 
 const Portfolio = () => {
+
+const [letterClass, setLetterClass] = useState('text-animate');
+const portfolioArray = ['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o'];
+
+useEffect(() => {
+  return setTimeout (() => {
+    setLetterClass('text-animate-hover')
+  }, 2000)
+}, [])
+
   return (
     <div className="portfolio">
       <div className="p-text">
-        <h1 className="port-title">Portfolio</h1>
+        <AnimatedLetters letterClass={letterClass} 
+        strArray={portfolioArray}
+        idx={7} />
         <p className="port-desc">
           Here are some of my PROJECTS <BsLaptop />
         </p>
