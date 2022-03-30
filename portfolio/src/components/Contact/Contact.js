@@ -13,16 +13,41 @@ import { validateEmail } from "../../utils/helpers";
 import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
 
 function Contact() {
+  const [letterClass, setLetterClass] = useState("text-animate");
+  const connectArray = [
+    "W",
+    "o",
+    "u",
+    "l",
+    "d",
+    " ",
+    "y",
+    "o",
+    "u",
+    " ",
+    "l",
+    "i",
+    "k",
+    "e",
+    " ",
+    "t",
+    "o",
+    " ",
+    "c",
+    "o",
+    "n",
+    "n",
+    "e",
+    "c",
+    "t",
+    "?",
+  ];
 
-const [letterClass, setLetterClass] = useState('text-animate');
-const connectArray = ['W', 'o', 'u', 'l', 'd', ' ', 'y', 'o', 'u', ' ', 'l', 'i', 'k', 'e', ' ', 't', 'o', ' ', 'c', 'o', 'n', 'n', 'e', 'c', 't','?'];
-
-useEffect(() => {
-  return setTimeout (() => {
-    setLetterClass('text-animate-hover')
-  }, 2000)
-}, [])
-
+  useEffect(() => {
+    return setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 2000);
+  }, []);
 
   let [userName, setUserName] = useState("");
   let [email, setEmail] = useState("");
@@ -92,9 +117,11 @@ useEffect(() => {
     <div className="contact-wrapper">
       <Container className="contact-container">
         {/* <h1 className="contact-text">Would you like to connect?</h1> */}
-        <AnimatedLetters letterClass={letterClass} 
-        strArray={connectArray}
-        idx={1} />
+        <AnimatedLetters
+          letterClass={letterClass}
+          strArray={connectArray}
+          idx={1}
+        />
         <Form className="contact-form" onSubmit={onSubmit}>
           <Form.Group controlId="form.Name">
             <Form.Label className="contact-title">

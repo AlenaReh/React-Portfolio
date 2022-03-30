@@ -1,7 +1,7 @@
 .header {
   display: flex;
   height: 100px;
-  background-color: var( --navbar);
+  background-color: var(--navbar);
   font-size: 20px;
 }
 
@@ -11,14 +11,14 @@
 }
 
 .nav-link {
-  color: var( --light-text) !important;
+  color: var(--light-text) !important;
   margin: 2rem;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.navbar-nav :hover{
+.navbar-nav :hover {
   transform: scale(1.05);
   box-shadow: 0 3px 3px 3px;
   border-radius: 0.2rem;
@@ -82,4 +82,3 @@
     display: none;
   }
 }
-
