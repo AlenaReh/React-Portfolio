@@ -28,7 +28,7 @@ useEffect(() => {
       <div className="p-text">
         <AnimatedLetters letterClass={letterClass} 
         strArray={portfolioArray}
-        idx={7} />
+        idx={1} />
         <p className="port-desc">
           Here are some of my PROJECTS <BsLaptop />
         </p>
